@@ -4,7 +4,7 @@ import connectDb from "./connectDb.js";
 //express method checking if request is valid
 export const addAffirmations = async (req, res) => {
   if (!req.body || !req.body.message) {
-    res.status(401).send("❌Invalid Request❌");
+    res.status(401).send("❌ Invalid Request ❌");
     return;
   }
 
